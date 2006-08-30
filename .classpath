@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="thirdparty/concurrent.jar"/>
+	<classpathentry kind="lib" path="thirdparty/xmlrpc-applet.jar"/>
+	<classpathentry kind="lib" path="thirdparty/touchgraph.jar"/>
+	<classpathentry sourcepath="F:/dev/jfreechart-1.0.1/source" kind="lib" path="thirdparty/jcommon-1.0.0.jar"/>
+	<classpathentry sourcepath="F:/Dev/jfreechart-1.0.1" kind="lib" path="thirdparty/jfreechart-1.0.1.jar"/>
+	<classpathentry sourcepath="F:/dev/l2fprod-common-6.5.1/src" kind="lib" path="thirdparty/l2fprod-common-sheet.jar"/>
+	<classpathentry kind="output" path="class"/>
+</classpath>

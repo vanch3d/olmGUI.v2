@@ -1,0 +1,110 @@
+/** @mainpage Open Learner Model - GUI
+
+The OLM is one of the component of the Extended Learner Model (xLM), the prototype learner
+modelling subsystem of LeActiveMath. Its aim it to provide LeActiveMath with an interface
+for the learners to access, explore and challenge the judgments that the xLM is holding about
+them. It supports several external representations for displaying the various sources of information
+that the xLM is using to establish its judgement (belief, evidence, etc.) and a mechanism - loosely
+based on Toulmin Argumentation Pattern - to control the exploration and negotiation of the
+beliefs. 
+
+<P>
+
+The OLM is implemented as a SWING applet, using the powerful resources of this Java
+GUI library in order to provide a suitable and usable interface for the learners.
+
+<P>
+
+\image html snapshot.png "A snapshot of the Open Learner Model."
+\image latex snapshot.eps "A snapshot of the Open Learner Model."
+
+*/
+
+
+/** @package config
+	@brief This package contains the implementation of the various safe enumerations and 
+	configuration classes used in the OLM. 
+	
+*/
+
+/** @package dialogue
+	@brief This package contains all the classes required for managing the dialogue between
+		   the learner and the OLM
+		   
+    The package consists in several classes implementing the various moves that can be played 
+	either by the OLM or the learner, as well as the handler for the current dialogue move.		 
+
+	@todo It will be a good idea to look at some FSM implementation to have an alternative to this 
+		  hand-made system (check http://smc.sourceforge.net/ for example).
+*/
+
+/** @package olmgui
+	@brief This package contains the implementation of the Graphical User Interface of the 
+	Open Learner Model. 
+	
+*/
+
+/** @package olmgui.graph
+	@brief This package contains the classes used to display and manipulate the topic maps 
+	and the Toulmin Argumentation Pattern. 
+	
+*/
+
+/** @package olmgui.i18n
+	@brief This package contains the classes supporting the internationalisation of the OLM.
+
+Languages currently supported by the OLM are:
+ - English (default) in the file <code>messages.properties</code>
+ - Spanish in the file <code>messages_es.properties</code>
+ - French in the file <code>messages_fr.properties</code>
+ - German in the file <code>messages_de.properties</code>
+
+
+The files contains key/value pairs of string. The keys are organised according to 
+the following pattern:
+
+ - <code>DlgErrorMsg</code> refers to the various error or warning messages used 
+	by the OLM. Subkeys are used mostly for convenience.
+ - <code>DlgMove</code> refers to the templates used to transcribe the dialogue moves,
+	played either by the user or the OLM, in the Dialogue View. Subkeys are used to 
+	identify individual dialogue moves and the context in which they occur.
+ - <code>Metadata</code> refers to the translation of the various information coming 
+	from LeAM such as the parameters and values of the events. Subkeys correspond to  
+	the various attributes extracted from the evidence, as described in 
+	{@link config.OLMQueryResult}.<BR>
+	Attributes subkeys could have subkeys themselves, indicating the possible values 
+	that the attribute could take (and their transcription). See 
+	{@link toulmin.ToulminAttribute} for more information about the transcription of 
+	event's attributes.
+ - <code>OLMChallengePane</code> contains the strings used in the various widgets of 
+	the Challenge GUI.
+ - <code>OLMConfig</code> contains various strings used to configure the OLM.
+ - <code>OLMGraphBrowser</code> 
+ - <code>OLMMainGUI</code> 
+ - <code>OLMMoveSelector</code> 
+ - <code>OLMTopicConfig</code> 
+ - <code>OLMTopicConfig</code> 
+
+*/
+
+/** @package olmgui.input
+	@brief This package contains the implementation of the various interface used by the 
+	user to communicate with the OLM. 
+	
+*/
+
+/** @package olmgui.output
+	@brief This package contains the implementation of the various external representations 
+	of the OLM. 
+	
+*/
+
+/** @package olmgui.utils
+	@brief This package contains the implementation of various helper classes used by the OLM. 
+	
+*/
+
+/** @package toulmin
+	@brief This package contains the implementation of Toulmin Argumentation Pattern.
+	
+*/

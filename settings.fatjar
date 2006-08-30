@@ -1,0 +1,13 @@
+#Fat Jar Configuration File
+#Mon Nov 21 15:50:34 GMT 2005
+onejar.license.required=true
+manifest.classpath=
+onejar.checkbox=false
+jarname=thirdparty\\olmgui.jar
+manifest.mergeall=true
+manifest.mainclass=
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<jar|touchgraph.jar>;<jar|concurrent.jar>;<jar|xmlrpc-applet.jar>
+includes=

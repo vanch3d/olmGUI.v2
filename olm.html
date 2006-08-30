@@ -1,0 +1,41 @@
+<html><head><title>ActiveMath - My Learner Model</title><!-- <SCRIPT LANGUAGE="JavaScript">
+	function resize() {
+		var w_newWidth,w_newHeight;
+		var w_maxWidth=1600, w_maxHeight=1200;
+		if (navigator.appName.indexOf("Microsoft") != -1){
+                    w_newWidth=document.body.clientWidth;
+                    w_newHeight=document.body.clientHeight;
+                } else
+		  {
+                    var netscapeScrollWidth=16;
+                    w_newWidth=window.innerWidth - netscapeScrollWidth;
+                    w_newHeight=window.innerHeight-netscapeScrollWidth;
+                }
+                document.olmapplet.width = w_newWidth;
+                document.olmapplet.height = w_newHeight;
+                window.scroll(0,0);
+            }
+            window.onResize = resize;
+            window.onLoad = resize;
+        </SCRIPT>
+	<BODY topmargin="0" leftmargin="0" marginwidth="0" 
+		  marginheight="0" onLoad="resize()" onResize="resize()">
+--></head><BODY topmargin="5" leftmargin="5" marginwidth="5" marginheight="5">
+<P align=center>
+<APPLET 
+  name="olmapplet" 
+  code="olmgui.OLMMainGUI.class" 
+  archive="class/,thirdparty/xmlrpc-applet.jar,
+           thirdparty/concurrent.jar,thirdparty/touchgraph.jar"
+  width="98%" height="98%"> This applet is not loading, pal!
+
+	<!-- RUN LEAM FIRST, OPEN THE OLM AND GET THE SESSION URL FROM THE SOURCE -->
+	<!-- THEN REPLACE IT IN THE FOLLOWING PARAM -->
+	<param name="olmCoreServiceUrl" value="http://130.209.168.54:8080/ActiveMath2/xmlrpc/olm/350334">
+	<!-- no initial belief descriptor -->
+
+              
+</APPLET></P>
+
+</BODY>
+</html>

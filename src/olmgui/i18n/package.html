@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+	<TITLE>Package Output</TITLE>
+</HEAD>
+<BODY>
+This package contains the classes supporting the internationalisation of the OLM.
+
+<P>Languages currently supported by the OLM are:
+
+<UL>
+<LI> English (default) in the file <code>messages.properties</code>
+<LI> Spanish in the file <code>messages_es.properties</code>
+<LI> French in the file <code>messages_fr.properties</code>
+<LI> German in the file <code>messages_de.properties</code>
+</UL>
+
+
+<P>The files contains key/value pairs of string. The keys are organised according to 
+the following pattern:
+
+<UL>
+<LI><code>DlgErrorMsg</code> refers to the various error or warning messages used 
+	by the OLM. Subkeys are used mostly for convenience.
+	
+<LI><code>DlgMove</code> refers to the templates used to transcribe the dialogue moves
+	- played either by the user or the OLM - in the Dialogue View. Subkeys are used to 
+	identify individual dialogue moves and the context in which they occur.
+
+<LI><code>Metadata</code> refers to the traduction of the various information coming 
+	from LeAM such as the parameters and values of the events. Subkeys correspond to  
+	the various attributes extracted from the evidence, as described in 
+	{@link config.OLMQueryResult}.<BR>
+	Attributes subkeys could have subkeys themselves, indicating the possible values 
+	that the attribute could take (and their transcription). See 
+	{@link toulmin.ToulminAttribute} for more information about the transcription of 
+	event's attributes.
+	
+<LI><code>OLMChallengePane</code> contains the strings used in the various widgets of 
+	the Challenge GUI.
+
+<LI><code>OLMConfig</code> contains various strings used to configure the OLM.
+
+<LI><code>OLMGraphBrowser</code> 
+
+<LI><code>OLMMainGUI</code> 
+
+<LI><code>OLMMoveSelector</code> 
+
+<LI><code>OLMTopicConfig</code> 
+
+<LI><code>OLMTopicConfig</code> 
+
+</UL>
+
+</BODY>
+</HTML>
